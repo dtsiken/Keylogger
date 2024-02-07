@@ -1,0 +1,37 @@
+
+
+Computer Information
+Computer Name: PC1
+OS: Windows 11
+
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe00::00ff:00d0:0dc0:d0ae%0
+   IPv4 Address. . . . . . . . . . . : 000.000.0.0
+   Subnet Mask . . . . . . . . . . . : 0.0.0.0
+   Default Gateway . . . . . . . . . : fe00::0%0
+                                       000.000.0.0
+
+Public IP: 000.000.00.00
+Private IP: 000.000.0.0
+
+[Monday, January 00, 0000 00:00:00] : 
+[Monday, January 00, 0000 00:00:00] : [Application: New Folder]d
+[Monday, January 00, 0000 00:00:00] : [Application: python - Error : No module named 'psutil' - Stack Overflow - Google Chrome] {L.CTRL} \x17
+[Monday, January 00, 0000 00:00:00] : [Application: New Tab - Google Chrome]facebook {ENTER} 
+[Monday, January 00, 0000 00:00:00] :  {ENTER} 
+[Monday, January 00, 0000 00:00:00] : [Application: New Folder]e
+[Monday, January 00, 0000 00:00:00] : [Application: facebook - Google Search - Google Chrome] {BACKSPACE}  {CAPSLOCK} META MEATA ADAD 
+[Monday, January 00, 0000 00:00:00] : [Application: New Folder]E
+[Monday, January 00, 0000 00:00:00] : [Application: facebook - Google Search - Google Chrome] {BACKSPACE}  {CAPSLOCK} a {BACKSPACE} meta meat mead meme meme ma ma mr my 
+[Monday, January 00, 0000 00:00:00] : [Application: New Folder]e
+[Monday, January 00, 0000 00:00:00] : [Application: facebook - Google Search - Google Chrome]task {ENTER} 
+[Monday, January 00, 0000 00:00:00] :  {ENTER} 
+[Monday, January 00, 0000 00:00:00] : [Application: New Folder]ee
+[Monday, January 00, 0000 00:00:00] : [Application: facebook - Google Search - Google Chrome]sti {BACKSPACE} op stop
+[Monday, January 00, 0000 00:00:00] : [Application: New Folder]errxrxrxrxrxe
