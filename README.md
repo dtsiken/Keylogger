@@ -12,4 +12,4 @@ This is the Content of the Log inside:
 
 
 GOOD NEWS!:
-YOU CAN TRY THE SCRIPT I MADE JUST DOWLOAD THE "Simple Keylogger.EXE" to evaluate
+YOU CAN TRY THE SCRIPT I MADE JUST DOWLOAD THE "Simple Keylogger.EXE" to evaluate for your self
