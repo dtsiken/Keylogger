@@ -14,10 +14,10 @@ This is the Content of the Log inside:
 ![image](https://github.com/dtsiken/Keylogger/assets/101923825/deece16b-c1ee-4332-b378-a067843f0336)
 
 
+
+
 GOOD NEWS!:
 YOU CAN TRY THE SCRIPT I MADE JUST DOWNLOAD THE "Simple Keylogger.EXE" to evaluate for your self
-
-
 
 
 BACKLOG (WILL BE ADDED LATER ON):
