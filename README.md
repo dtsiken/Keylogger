@@ -1,7 +1,9 @@
 # Keylogger
 Simple Text File Keystroke Logging Program Written in Python
 
+
 NOTE: DONT WORRY ABOUT A BUNCH OF ZEROES IT IS FIR PRIVACY PURPOSES BUT IT IS ACTUALLY WORKING
+
 
 The Text File will be created when executed and the FORMAT will be Like this:
 
