@@ -18,6 +18,8 @@ GOOD NEWS!:
 YOU CAN TRY THE SCRIPT I MADE JUST DOWNLOAD THE "Simple Keylogger.EXE" to evaluate for your self
 
 
+
+
 BACKLOG (WILL BE ADDED LATER ON):
 
 
