@@ -17,7 +17,7 @@ This is the Content of the Log inside:
 
 
 GOOD NEWS!:
-YOU CAN TRY THE SCRIPT I MADE JUST DOWNLOAD THE "Simple Keylogger.EXE" to evaluate for your self
+YOU CAN TRY THE SCRIPT I MADE JUST DOWNLOAD THE "Simple Keylogger.exe" to evaluate for your self
 
 
 BACKLOG (WILL BE ADDED LATER ON):
