@@ -1,5 +1,5 @@
 # Keylogger
-Simple Text File Keystroke Logging Written in Python
+Simple Text File Keystroke Logging Program Written in Python
 NOTE: DONT WORRY ABOUT A BUNCH OF ZEROES IT IS FIR PRIVACY PURPOSES BUT IT IS ACTUALLY WORKING
 
 The Text File will be created when executed and the FORMAT will be Like this:
@@ -12,4 +12,4 @@ This is the Content of the Log inside:
 
 
 GOOD NEWS!:
-YOU CAN TRY THE SCRIPT I MADE JUST DOWLOAD THE "Simple Keylogger.EXE" to evaluate for your self
+YOU CAN TRY THE SCRIPT I MADE JUST DOWNLOAD THE "Simple Keylogger.EXE" to evaluate for your self
