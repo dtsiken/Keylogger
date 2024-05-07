@@ -2,7 +2,7 @@ Collection of Keylogger
 
 First is Saves Only Localy in the Text File
 
-Second is Advanced Version. Keystroke that will Sends to Telegram Group Chat with set Amount of Time**
+Second is Advanced Version. Keystroke that will Sends to Telegram Group using a BOT with set Amount of Time**
 
 **The Text File will be created when executed and the FORMAT will be Like this:**
 
