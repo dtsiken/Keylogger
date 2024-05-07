@@ -4,7 +4,9 @@
 
 **Main Requirements:**
    Python 3.10 or Higher
+   
    Stable Internet Connection(For Installing the Library and Nuitka/Pyinstaller for the First Time)
+  
    Windows Operating System
    
 If you want to Download this Project Download this as Zip and Install the Necessary Libraries
