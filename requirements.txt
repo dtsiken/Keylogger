@@ -2,4 +2,3 @@ keyboard==0.13.5
 PyGetWindow==0.0.9
 pynput==1.7.6
 pyTelegramBotAPI==4.17.0
-
