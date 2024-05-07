@@ -10,10 +10,10 @@ import telebot
 import os
 
 # Telegram bot token
-TOKEN = '7076974857:AAH2nRGo9IN9P5g-fo19PFlc-znBfgGVzl4'
+TOKEN = 'BOT_TOKEN_HERE'
 
 # Chat ID where you want to send the messages
-CHAT_ID = '-1002043772522'
+CHAT_ID = 'CHAT_ID_HERE'
 
 
 # Initialize Telegram bot
