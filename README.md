@@ -1,8 +1,7 @@
 # Keylogger
-Simple Text File Keystroke Logging Program Written in Python
-
-
-NOTE: DON'T WORRY ABOUT A BUNCH OF ZEROES IT IS FOR PRIVACY PURPOSES BUT IT IS ACTUALLY WORKING AS INTENDED
+Collection of Keylogger 
+First is Saves Only Localy in the Text File
+Second is Advanced the Keystroke that will Sends to Telegram Group Chat with set Amount of Time
 
 
 The Text File will be created when executed and the FORMAT will be Like this:
