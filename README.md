@@ -9,7 +9,10 @@ Second is Advanced the Keystroke that will Sends to Telegram Group Chat with set
 
 The Text File will be created when executed and the FORMAT will be Like this:
 
-![image](https://github.com/dtsiken/Keylogger/assets/101923825/8a3fbbad-d49c-46ff-a627-65faa0c88035)        ![image](https://github.com/dtsiken/Keylogger/assets/101923825/7d09f50c-f491-4070-bbc8-cc98828f3eed)
+![image](https://github.com/dtsiken/Keylogger/assets/101923825/8a3fbbad-d49c-46ff-a627-65faa0c88035)
+
+![image](https://github.com/dtsiken/Keylogger/assets/101923825/0bef8a42-67c6-4c55-9128-12c2512d5e61)
+
 
 
 This is the Content of the Log inside:
