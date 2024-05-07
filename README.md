@@ -11,6 +11,7 @@ The Text File will be created when executed and the FORMAT will be Like this:
 
 ![image](https://github.com/dtsiken/Keylogger/assets/101923825/8a3fbbad-d49c-46ff-a627-65faa0c88035)
 
+The Text File will be Created Before Sending to Telegram
 ![image](https://github.com/dtsiken/Keylogger/assets/101923825/0bef8a42-67c6-4c55-9128-12c2512d5e61)
 
 
@@ -19,6 +20,9 @@ This is the Content of the Log inside:
 
 ![image](https://github.com/dtsiken/Keylogger/assets/101923825/deece16b-c1ee-4332-b378-a067843f0336)
 
+This is the sent Text File to Telegram
+
+![image](https://github.com/dtsiken/Keylogger/assets/101923825/e129e57c-534e-4999-a7eb-646bf38e4b6a)
 
 
 
