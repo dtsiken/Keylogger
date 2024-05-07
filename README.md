@@ -10,11 +10,13 @@
   
    •Windows Operating System
    
-If you want to Download this Project Download this as Zip and Install the Necessary Libraries
+If you want to Download this Project Download this as Zip and Install the Necessary Libraries Before Running the Program
 
 Navigate to the Download Path and Extract the Zip File and Open CMD in that Directory or change Directory to where the Project is Located
 
-type **pip install -r requirements.txt** to install the necessary Libraries wait until it Finished
+type **pip install -r requirements.txt** to install the necessary Libraries wait until it Finished and now you can Run the Program without any Errors
+
+**There are 2 types of the Program:**
 
 First is Saves Only Localy in the Text File
 
