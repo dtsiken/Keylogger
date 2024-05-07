@@ -3,11 +3,12 @@
 **For Linux and MAC user it will not Work Because it Depends on some of the Windows DLL's!**
 
 **Main Requirements:**
-   Python 3.10 or Higher
    
-   Stable Internet Connection(For Installing the Library and Nuitka/Pyinstaller for the First Time)
+   •Python 3.10 or Higher
+   
+   •Stable Internet Connection(For Installing the Library and Nuitka/Pyinstaller for the First Time)
   
-   Windows Operating System
+   •Windows Operating System
    
 If you want to Download this Project Download this as Zip and Install the Necessary Libraries
 
