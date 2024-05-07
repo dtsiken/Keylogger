@@ -12,7 +12,7 @@
    
 If you want to Download this Project Download this as Zip and Install the Necessary Libraries
 
-Navigate to the Download Path and Extract the Zip File and Open CMD in that Directory or change Directory to the Project Located
+Navigate to the Download Path and Extract the Zip File and Open CMD in that Directory or change Directory to where the Project is Located
 
 type **pip install -r requirements.txt** to install the necessary Libraries wait until it Finished
 
