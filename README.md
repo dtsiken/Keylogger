@@ -1,5 +1,9 @@
 **Collections of Keylogger that Specifically Created for Windows**
 
+I Created Extra 3 .txt file backup in Case that Windows Defender/Any Anti Virus Installed Remove the Python File you can Restore it There
+
+If the Defender/Any Antivirus still Removes it Turn Any Antivirus off the Prevent it Being Removed Automaticaly
+
 **For Linux and MAC user it will not Work Because it Depends on some of the Windows DLL's!**
 
 **Main Requirements:**
